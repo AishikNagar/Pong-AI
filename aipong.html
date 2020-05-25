@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ai Pong</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <span class="navbar-brand mb-0 h1">AI Pong</span>
+    </nav>
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to AI Pong!</h1>
+      <p class="lead">
+        This is a simple model created in tensorflow.js which learns from the
+        user.
+      </p>
+      <hr class="my-4" />
+      <p>
+        The AI will observe the user for 20 games after which it will attempt to
+        play against the user. The training process is being documented in the
+        console. Click on the game to control the pong pad.
+      </p>
+    </div>
+    <div id="mainContent" class="container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.11.2"></script>
+    <script src="aipong.js"></script>
+  </body>
+</html>
